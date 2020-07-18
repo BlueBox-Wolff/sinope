@@ -21,7 +21,8 @@ repositories() {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'io.netty:netty-all:4.1.51.Final'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
 }
