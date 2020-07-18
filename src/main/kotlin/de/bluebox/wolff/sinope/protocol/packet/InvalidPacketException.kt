@@ -6,13 +6,9 @@ class InvalidPacketException : RuntimeException {
 
   companion object {
     @JvmStatic
-    fun of(message: String): InvalidPacketException {
-      return InvalidPacketException(message)
-    }
+    fun of(message: String): InvalidPacketException = InvalidPacketException(message)
 
     @JvmStatic
-    fun of(message: String, cause: Throwable): InvalidPacketException {
-      return InvalidPacketException(message, cause)
-    }
+    fun of(message: String, cause: Throwable): InvalidPacketException = InvalidPacketException(message, cause)
   }
 }

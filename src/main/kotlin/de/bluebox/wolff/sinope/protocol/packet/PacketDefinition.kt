@@ -1,13 +1,9 @@
 package de.bluebox.wolff.sinope.protocol.packet
 
 class PacketDefinition private constructor(private val packetClass: Class<out Packet>, private val id: Int) {
-  fun packetClass(): Class<out Packet> {
-    return packetClass
-  }
+  fun packetClass(): Class<out Packet> = this.packetClass
 
-  fun id(): Int {
-    return id
-  }
+  fun id(): Int = this.id
 
   companion object {
     @JvmStatic
